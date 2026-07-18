@@ -207,16 +207,7 @@ AZURE_LANGUAGE_KEY=
 
 ### Step 5 - Build
 
-Pick your track and start coding. Come back to this repo if you need to reference the architecture diagrams or evaluation criteria.
-
-## Evaluation Criteria
-
-| Criteria | What it means |
-|---|---|
-| **Functionality** | The system works, shown with real examples, not just described |
-| **Grounding** | Outputs are traceable to a source or method, not hallucinated |
-| **Responsible AI** | At least one risk, bias, or limitation is acknowledged |
-| **Clarity** | Someone unfamiliar with the project could follow this README and understand it |
+Pick your track and start coding. The `track-a-rag/`, `track-b-agents/`, and `track-c-nlp/` folders each have a starter script and their own README with track-specific instructions.
 
 ## Deliverables
 
@@ -224,14 +215,61 @@ Pick your track and start coding. Come back to this repo if you need to referenc
 - [ ] Architecture write-up
 - [ ] Sample inputs and outputs
 - [ ] Prompt design notes (if applicable)
-- [ ] Responsible AI considerations section
+- [ ] Responsible AI considerations (at least one risk or limitation you found)
 
-## Learning Path Reference
+## Resources
 
-- [Microsoft Foundry Training](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
-- [Develop AI Agents on Azure](https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/)
-- [Explore Azure AI Language](https://learn.microsoft.com/en-us/training/paths/explore-natural-language-processing/)
-- [Full Learn Plan (this project's parent path)](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
+Everything below is free and official. No paywalls.
+
+### The full learning path
+
+- [AI, NLP & Agents with Microsoft Azure - Complete Learning Path](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
+
+### Track A - RAG Agent
+
+| Resource | What it covers |
+|---|---|
+| [Azure AI Foundry Agent Service docs](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/agents/create-agent) | How to create and manage Foundry agents |
+| [File Search tool reference](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/agents/tools/file-search) | Attaching documents to an agent |
+| [Tutorial: Build an agentic retrieval solution](https://learn.microsoft.com/en-us/azure/search/tutorial-rag-build-solution) | Step-by-step RAG pipeline with Azure AI Search |
+| [Azure AI Search - vector search quickstart](https://learn.microsoft.com/en-us/azure/search/search-get-started-vector) | How to index and query with embeddings |
+| [Azure AI Search Python samples (GitHub)](https://github.com/Azure-Samples/azure-search-python-samples) | Runnable notebooks including vector search |
+| [azure-ai-projects SDK reference](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme) | Full SDK docs |
+| [Foundry IQ knowledge base setup](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/knowledge-base) | No-code RAG via Foundry portal |
+| [RAG - Microsoft Learn module](https://learn.microsoft.com/en-us/training/modules/use-own-data-azure-openai/) | Milestone 7 reference |
+
+### Track B - Tool-Calling Agent
+
+| Resource | What it covers |
+|---|---|
+| [Foundry Agent Service - Function Tools](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/agents/tools/function-tool) | How to register custom Python functions as tools |
+| [azure-ai-projects FunctionTool reference](https://learn.microsoft.com/en-us/python/api/azure-ai-projects/azure.ai.projects.models.functiontool) | API reference for tool registration |
+| [Develop AI Agents on Azure (Learn path)](https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/) | Milestone 6 full path |
+| [Official agent samples (GitHub)](https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/Agents) | Ready-to-run agent examples |
+| [Azure AI Foundry Agentic Workshop (GitHub)](https://github.com/jonathanscholtes/azure-ai-foundry-agentic-workshop) | Advanced patterns including multi-agent and LangGraph |
+| [OpenWeatherMap free API](https://openweathermap.org/api) | Real weather data for replacing the mock tool |
+
+### Track C - Nepali-English NLP
+
+| Resource | What it covers |
+|---|---|
+| [Sentiment analysis quickstart (Python)](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart) | Getting started with azure-ai-textanalytics |
+| [Supported languages - Azure AI Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/language-support) | Confirm Nepali (ne) support and which features are available |
+| [Azure Translator - Python quickstart](https://learn.microsoft.com/en-us/azure/ai-services/translator/quickstart-text-sdk?pivots=programming-language-python) | Getting started with Azure Translator SDK |
+| [azure-ai-textanalytics PyPI](https://pypi.org/project/azure-ai-textanalytics/) | Package docs |
+| [azure-ai-translation-text PyPI](https://pypi.org/project/azure-ai-translation-text/) | Package docs |
+| [Explore Azure AI Language (Learn path)](https://learn.microsoft.com/en-us/training/paths/explore-natural-language-processing/) | Milestone 4 full path |
+| [Opinion mining docs](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api) | Aspect-level sentiment beyond simple positive/negative |
+
+### General Azure setup
+
+| Resource | What it covers |
+|---|---|
+| [Create a free Azure account](https://azure.microsoft.com/free/) | Free tier, no credit card required for most services |
+| [Azure AI Foundry portal](https://ai.azure.com) | Deploy models, create projects, manage agents |
+| [Azure Portal](https://portal.azure.com) | Create Language and Translator resources |
+| [DefaultAzureCredential guide](https://learn.microsoft.com/en-us/azure/developer/python/sdk/authentication-overview) | Avoid hardcoding keys |
+| [Responsible AI principles](https://learn.microsoft.com/en-us/training/paths/responsible-ai-business-principles/) | Milestone 8 reference |
 
 ## Author
 
