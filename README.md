@@ -2,7 +2,7 @@
 
 # Azure AI Capstone
 
-## Applying LLMs, prompt engineering, RAG, and AI agents on Microsoft Azure
+### Applying LLMs, Prompt Engineering, RAG, and AI Agents on Microsoft Azure
 
 [![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com/)
 [![Foundry](https://img.shields.io/badge/Microsoft-Foundry-5C2D91?style=flat-square&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
@@ -14,89 +14,92 @@
 
 ---
 
-## About this project
+## About This Project
 
-This is the capstone project for [AI, NLP & Agents with Microsoft Azure: A Complete Learning Path](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123), a 9-milestone Microsoft Learn Plan. The plan covers LLM fundamentals and building AI agents on Azure.
+This is the capstone project for **[AI, NLP & Agents with Microsoft Azure: A Complete Learning Path](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)**, a 9-milestone Microsoft Learn Plan covering everything from LLM fundamentals to building AI agents on Azure.
 
-The capstone turns theory into a working system. Pick one of the project tracks below, build it, and document it here.
+The capstone is where theory turns into a real, working system. Pick one of the three project tracks below, build it, and document it here.
 
-## Table of contents
+## Table of Contents
 
-- [Project tracks](#project-tracks)
-- [Tech stack](#tech-stack)
+- [Project Tracks](#project-tracks)
+- [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
-- [Getting started](#getting-started)
-- [Evaluation criteria](#evaluation-criteria)
+- [Getting Started](#getting-started)
+- [Evaluation Criteria](#evaluation-criteria)
 - [Deliverables](#deliverables)
-- [Learning path reference](#learning-path-reference)
+- [Learning Path Reference](#learning-path-reference)
 - [Author](#author)
 
-## Project tracks
+## Project Tracks
 
 Choose one and build it end to end.
 
-### Track A: RAG-based Q&A agent
-An agent that answers questions grounded in your own documents, with citations back to the source.
+### 🔍 Track A: RAG-Based Q&A Agent
+An agent that answers questions grounded in your own documents, with citations back to source.
 
 - Retrieval via Azure AI Search
-- Grounded generation via Foundry IQ or Foundry Agent Service
-- Builds on milestones 5 (Foundry) and 7 (RAG)
+- Grounded generation via Foundry IQ / Foundry Agent Service
+- Builds on Milestones 5 (Foundry) and 7 (RAG)
 
-### Track B: Tool-calling AI agent
-An agent that reasons about when to act and what to say.
+### 🛠️ Track B: Tool-Calling AI Agent
+An agent that reasons about *when* to act, not just what to say.
 
 - At least two custom tools (calculator, lookup, database query, your choice)
-- Orchestrated with Microsoft Foundry Agent Service and Agent Framework
-- Builds on milestones 5 (Foundry) and 6 (Agents)
+- Orchestrated with Microsoft Foundry Agent Service + Agent Framework
+- Builds on Milestones 5 (Foundry) and 6 (Agents)
 
-### Track C: Nepali-English NLP tool
-A tool tackling a low-resource language problem.
+### 🌐 Track C: Nepali-English NLP Tool
+A tool tackling a real low-resource language problem.
 
-- Sentiment analysis, translation, or transcription for Nepali or code-switched text
+- Sentiment analysis, translation, or transcription for Nepali / code-switched text
 - Powered by Azure AI Language
 - Evaluated against a small, manually labeled test set
-- Builds on milestones 2 (LLMs) and 4 (Azure AI Language)
+- Builds on Milestones 2 (LLMs) and 4 (Azure AI Language)
 
-## Tech stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
-| Models | Azure OpenAI, Foundry Models |
+| Models | Azure OpenAI / Foundry Models |
 | Retrieval | Azure AI Search, Foundry IQ |
 | Agents | Microsoft Foundry Agent Service, Agent Framework |
-| Language services | Azure AI Language |
+| Language Services | Azure AI Language |
 | Interface | *(fill in: CLI, notebook, web app, etc.)* |
 
 ## Architecture
 
-```text
+```
 [ Add your architecture diagram or flow here once the track is chosen ]
 
 Example (Track A - RAG):
 User Query -> Azure AI Search (retrieval) -> Foundry IQ (grounding) -> Response + Citation
 ```
 
-## Getting started
+## Getting Started
 
 ```bash
 git clone https://github.com/Aadarshttech/azure-ai-capstone.git
 cd azure-ai-capstone
 
+# Set up environment
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate   # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
+# Configure Azure credentials
 cp .env.example .env
+# then fill in your Azure/Foundry keys
 ```
 
-## Evaluation criteria
+## Evaluation Criteria
 
 | Criteria | What it means |
 |---|---|
-| Functionality | The system works, shown with real examples |
-| Grounding | Outputs are traceable to a source or method |
-| Responsible AI | At least one risk, bias, or limitation is acknowledged |
-| Clarity | Someone unfamiliar with the project could follow this file and understand it |
+| **Functionality** | The system works, shown with real examples, not just described |
+| **Grounding** | Outputs are traceable to a source or method, not hallucinated |
+| **Responsible AI** | At least one risk, bias, or limitation is acknowledged |
+| **Clarity** | Someone unfamiliar with the project could follow this README and understand it |
 
 ## Deliverables
 
@@ -106,16 +109,16 @@ cp .env.example .env
 - [ ] Prompt design notes (if applicable)
 - [ ] Responsible AI considerations section
 
-## Learning path reference
+## Learning Path Reference
 
-- [Microsoft Foundry training](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
-- [Develop AI agents on Azure](https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/)
+- [Microsoft Foundry Training](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
+- [Develop AI Agents on Azure](https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/)
 - [Explore Azure AI Language](https://learn.microsoft.com/en-us/training/paths/explore-natural-language-processing/)
-- [Full learn plan](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
+- [Full Learn Plan (this project's parent path)](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
 
 ## Author
 
-Aadarsh Pandit
+**Aadarsh Pandit**
 BTech AI, Kathmandu University
 Microsoft Student Ambassador Contributor ID: `studentamb_564123`
 
