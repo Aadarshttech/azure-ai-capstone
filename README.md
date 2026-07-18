@@ -1,7 +1,5 @@
 <div align="center">
 
-![Azure AI Capstone Banner](./banner.png)
-
 # Azure AI Capstone
 
 ### Applying LLMs, Prompt Engineering, RAG, and AI Agents on Microsoft Azure
