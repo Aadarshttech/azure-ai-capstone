@@ -1,16 +1,42 @@
 <div align="center">
 
+![Azure AI Capstone Banner](./banner.png)
+
 # Azure AI Capstone
 
 ### Applying LLMs, Prompt Engineering, RAG, and AI Agents on Microsoft Azure
 
 [![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com/)
 [![Foundry](https://img.shields.io/badge/Microsoft-Foundry-5C2D91?style=flat-square&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
-[![Learn Plan](https://img.shields.io/badge/Microsoft%20Learn-Plan-107C10?style=flat-square&logo=microsoftacademic&logoColor=white)](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
+[![Learn Plan](https://img.shields.io/badge/Microsoft%20Learn-Full%20Course%20Here-107C10?style=for-the-badge&logo=microsoftacademic&logoColor=white)](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
 [![Status](https://img.shields.io/badge/status-in%20progress-yellow?style=flat-square)]()
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)]()
 
 </div>
+
+---
+
+## What is this?
+
+This repo is the final project (Milestone 9) for the **AI, NLP & Agents with Microsoft Azure** learning path — a free, structured course on Microsoft Learn covering LLM fundamentals, prompt engineering, Azure AI Language, AI Foundry, agents, and RAG.
+
+**You don't need a Microsoft Learn account to use this repo.** Everything you need to understand and build the project is documented right here. The Learn Plan link above is optional — it gives you the full guided course with modules, quizzes, and progress tracking if you want the structured learning experience alongside this project.
+
+### What the course covers
+
+| Milestone | Topic |
+|---|---|
+| 1 | AI & NLP Foundations |
+| 2 | How Large Language Models Work |
+| 3 | Prompt Engineering |
+| 4 | Azure AI Language Services |
+| 5 | Azure AI Foundry |
+| 6 | Build AI Agents |
+| 7 | Retrieval-Augmented Generation (RAG) |
+| 8 | Responsible AI & Security |
+| 9 | **Capstone Project ← you are here** |
+
+> **Access the full course free:** https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123
 
 ---
 
@@ -22,6 +48,7 @@ The capstone is where theory turns into a real, working system. Pick one of the 
 
 ## Table of Contents
 
+- [What is this?](#what-is-this)
 - [Project Tracks](#project-tracks)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
