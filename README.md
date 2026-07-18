@@ -94,28 +94,110 @@ A tool tackling a real low-resource language problem.
 
 ## Architecture
 
-```
-[ Add your architecture diagram or flow here once the track is chosen ]
+Each track has a different flow. Pick the one that matches your chosen track.
 
-Example (Track A - RAG):
-User Query -> Azure AI Search (retrieval) -> Foundry IQ (grounding) -> Response + Citation
+**Track A — RAG-Based Q&A Agent**
+```
+Your Documents (PDFs / notes)
+        |
+        v
+  Azure AI Search          <-- indexes and retrieves relevant chunks
+        |
+        v
+  Foundry IQ / Agent Service  <-- generates a grounded answer
+        |
+        v
+  Response + Source Citation  <-- user sees the answer AND where it came from
+```
+
+**Track B — Tool-Calling AI Agent**
+```
+  User Input
+        |
+        v
+  Foundry Agent Service       <-- decides whether a tool is needed
+        |
+   _____|______
+  |            |
+  v            v
+Tool 1       Tool 2           <-- e.g. calculator, weather API, DB query
+  |            |
+  v            v
+  Agent assembles final response from tool outputs
+```
+
+**Track C — Nepali-English NLP Tool**
+```
+  Input Text (Nepali / code-switched)
+        |
+        v
+  Azure AI Language Service   <-- sentiment / translation / transcription
+        |
+        v
+  Output + Confidence Score
+        |
+        v
+  Compared against manually labeled test set
 ```
 
 ## Getting Started
+
+### Step 1 — Complete the course first
+
+This capstone builds directly on the 8 milestones in the Microsoft Learn plan. If you are coming here fresh, go through the course before diving into code:
+
+> [AI, NLP & Agents with Microsoft Azure — Full Learning Path](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
+
+Once you have covered Milestones 1–8, you will have the Azure knowledge needed to build any of the three tracks here.
+
+### Step 2 — Set up your Azure environment
+
+Before running any code you need an active Azure subscription. Free accounts work fine for this project.
+
+- [Create a free Azure account](https://azure.microsoft.com/free/)
+- [Set up Azure AI Foundry](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
+- For Track A/B: deploy a model in Foundry and note your endpoint + key
+- For Track C: enable Azure AI Language in your resource group
+
+### Step 3 — Clone and configure
 
 ```bash
 git clone https://github.com/Aadarshttech/azure-ai-capstone.git
 cd azure-ai-capstone
 
-# Set up environment
+# Create a virtual environment
 python -m venv venv
-source venv/bin/activate   # or venv\Scripts\activate on Windows
+source venv/bin/activate        # Mac/Linux
+venv\Scripts\activate           # Windows
+
 pip install -r requirements.txt
 
-# Configure Azure credentials
+# Copy the environment template and fill in your keys
 cp .env.example .env
-# then fill in your Azure/Foundry keys
 ```
+
+Open `.env` and add your Azure credentials:
+
+```
+AZURE_OPENAI_ENDPOINT=your_endpoint_here
+AZURE_OPENAI_KEY=your_key_here
+AZURE_SEARCH_ENDPOINT=your_search_endpoint   # Track A only
+AZURE_SEARCH_KEY=your_search_key             # Track A only
+AZURE_LANGUAGE_ENDPOINT=your_lang_endpoint  # Track C only
+AZURE_LANGUAGE_KEY=your_lang_key            # Track C only
+```
+
+### Step 4 — Pick your track and build
+
+Open the folder for your chosen track and follow the notebook or script inside:
+
+```
+track-a-rag/        <-- RAG Q&A Agent
+track-b-agents/     <-- Tool-Calling Agent
+track-c-nlp/        <-- Nepali-English NLP Tool
+```
+
+Each folder will have its own `README.md` with track-specific instructions once implementation is added.
 
 ## Evaluation Criteria
 
