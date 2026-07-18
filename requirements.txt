@@ -1,0 +1,14 @@
+# Core Azure SDKs
+azure-ai-projects>=1.0.0
+azure-identity>=1.17.0
+
+# Track A & B - Foundry / OpenAI / Agents
+openai>=1.30.0
+azure-search-documents>=11.4.0
+
+# Track C - Azure AI Language
+azure-ai-textanalytics>=5.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0

@@ -142,62 +142,72 @@ Tool 1       Tool 2           <-- e.g. calculator, weather API, DB query
 
 ## Getting Started
 
-### Step 1 — Complete the course first
+### Step 1 - Finish the Learn plan
 
-This capstone builds directly on the 8 milestones in the Microsoft Learn plan. If you are coming here fresh, go through the course before diving into code:
+This capstone is Milestone 9. The three tracks here are built directly on top of what the course teaches, so going through the earlier milestones first is what actually makes this buildable.
 
-> [AI, NLP & Agents with Microsoft Azure — Full Learning Path](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
+> [AI, NLP & Agents with Microsoft Azure - Full Learning Path](https://learn.microsoft.com/en-us/plans/zw0wtdtowmyxe2?sharingId=7ECC3D2E58004DEB&wt.mc_id=studentamb_564123)
 
-Once you have covered Milestones 1–8, you will have the Azure knowledge needed to build any of the three tracks here.
+After Milestones 1-8 you will have enough context to pick a track and start building without guesswork.
 
-### Step 2 — Set up your Azure environment
+### Step 2 - Create your own project repo
 
-Before running any code you need an active Azure subscription. Free accounts work fine for this project.
+This repo is the brief and reference template. Your actual implementation should live in its own repository.
+
+1. Create a new repo on GitHub (public or private, your call)
+2. Use the structure below as a starting point, or come up with your own
+
+```
+your-capstone/
+  README.md          <-- document your build here
+  .env.example       <-- commit this, never commit .env
+  requirements.txt
+  src/               <-- your code goes here
+  notebooks/         <-- notebooks if you are working in Jupyter
+  data/              <-- any sample docs or test sets
+```
+
+### Step 3 - Set up Azure
+
+You need an active Azure subscription. The free tier covers everything in this project.
 
 - [Create a free Azure account](https://azure.microsoft.com/free/)
-- [Set up Azure AI Foundry](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
-- For Track A/B: deploy a model in Foundry and note your endpoint + key
-- For Track C: enable Azure AI Language in your resource group
+- [Get started with Azure AI Foundry](https://learn.microsoft.com/en-us/training/azure/ai-foundry)
+- Track A and B: deploy a model in Foundry, save your endpoint and key
+- Track C: create an Azure AI Language resource in your resource group
 
-### Step 3 — Clone and configure
+### Step 4 - Install dependencies
+
+Copy `requirements.txt` from this repo into your project, then:
 
 ```bash
-git clone https://github.com/Aadarshttech/azure-ai-capstone.git
-cd azure-ai-capstone
-
-# Create a virtual environment
 python -m venv venv
 source venv/bin/activate        # Mac/Linux
 venv\Scripts\activate           # Windows
 
 pip install -r requirements.txt
-
-# Copy the environment template and fill in your keys
-cp .env.example .env
 ```
 
-Open `.env` and add your Azure credentials:
+Copy `.env.example` to `.env` and fill in your keys. Never commit your `.env` file.
 
 ```
-AZURE_OPENAI_ENDPOINT=your_endpoint_here
-AZURE_OPENAI_KEY=your_key_here
-AZURE_SEARCH_ENDPOINT=your_search_endpoint   # Track A only
-AZURE_SEARCH_KEY=your_search_key             # Track A only
-AZURE_LANGUAGE_ENDPOINT=your_lang_endpoint  # Track C only
-AZURE_LANGUAGE_KEY=your_lang_key            # Track C only
+AZURE_OPENAI_ENDPOINT=
+AZURE_OPENAI_KEY=
+AZURE_OPENAI_DEPLOYMENT=
+
+# Track A only
+AZURE_SEARCH_ENDPOINT=
+AZURE_SEARCH_KEY=
+AZURE_SEARCH_INDEX=
+
+# Track C only
+AZURE_LANGUAGE_ENDPOINT=
+AZURE_LANGUAGE_KEY=
 ```
 
-### Step 4 — Pick your track and build
+### Step 5 - Build
 
-Open the folder for your chosen track and follow the notebook or script inside:
-
-```
-track-a-rag/        <-- RAG Q&A Agent
-track-b-agents/     <-- Tool-Calling Agent
-track-c-nlp/        <-- Nepali-English NLP Tool
-```
-
-Each folder will have its own `README.md` with track-specific instructions once implementation is added.
+Pick your track and start coding. Come back to this repo if you need to reference the architecture diagrams or evaluation criteria.
 
 ## Evaluation Criteria
 
